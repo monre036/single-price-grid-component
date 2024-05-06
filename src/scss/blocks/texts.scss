@@ -1,1 +1,45 @@
+@use '../mixins/responsive.scss' as *;
 
+.text {
+  font-size: 0.875rem;
+  font-weight: 400;
+  @include responsive(laptop) {
+    font-size: 1rem;
+  }
+
+  &--yellow {
+    color: #c0df33;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+    letter-spacing: -0.0119rem;
+  }
+
+  &--xs {
+    line-height: 1.625rem;
+    letter-spacing: 0.0106rem;
+    color: white;
+  }
+
+  &--grey {
+    color: #9aa7be;
+  }
+
+  &--price {
+    color: white;
+    font-size: 2rem;
+    letter-spacing: -0.025rem;
+    margin: 0;
+  }
+
+  &--white {
+    font-size: 1rem;
+    line-height: 1.625rem;
+    letter-spacing: -0.0125rem;
+    color: white;
+  }
+
+  &--end {
+    margin: 0;
+  }
+}
